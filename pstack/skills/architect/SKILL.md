@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Architect
 
+Outside Cursor, read [`../poteto-mode/references/harness.md`](../poteto-mode/references/harness.md) first. It maps the Cursor tools, paths, and model slugs below to Claude Code and Codex.
+
 Sketch types, function signatures, class shapes, and module boundaries with `not implemented` bodies and pseudocode. Synthesize across multiple model perspectives, then fill in code against the chosen sketch.
 
 ## Start

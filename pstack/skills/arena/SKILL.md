@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Arena
 
+Outside Cursor, read [`../poteto-mode/references/harness.md`](../poteto-mode/references/harness.md) first. It maps the Cursor tools, paths, and model slugs below to Claude Code and Codex.
+
 Open a todolist with one entry per phase (Frame, Fan out, Cross-judge, Pick, Graft, Verify) before launching anything.
 
 ## Phase A: Frame

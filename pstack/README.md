@@ -18,6 +18,19 @@ fork it. improve it. make it yours. PRs are welcome!
 /add-plugin pstack
 ```
 
+### claude code and codex
+
+this fork runs pstack in claude code and codex too. clone it and link the skills:
+
+```bash
+git clone -b claude-codex git@github.com:rubenmeza/plugins.git
+./plugins/pstack/install.sh
+```
+
+`install.sh` links each skill into `~/.agents/skills` (codex reads it) and `~/.claude/skills`, and the agents into `~/.claude/agents`. it skips any name you already have. `./install.sh --uninstall` removes only its own links. `tdd` and `teach` are renamed to `poteto-tdd` and `poteto-teach` so they don't collide with other skill packs.
+
+[`skills/poteto-mode/references/harness.md`](./skills/poteto-mode/references/harness.md) maps cursor's subagents, per-role models, paths, and built-ins to both tools. `/setup-pstack` writes `~/.agents/pstack-models.md`, and both read it. panels keep two model families by calling the other tool's cli (`codex exec` from claude code, `claude -p` from codex). custom modes and cursor automations (`make-bot-ui`, `automations/benny`) stay cursor-only.
+
 ## get started
 
 two steps:

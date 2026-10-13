@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Automate me
 
+Outside Cursor, read [`../poteto-mode/references/harness.md`](../poteto-mode/references/harness.md) first. It maps the Cursor tools, paths, and model slugs below to Claude Code and Codex.
+
 A guided flow for turning the user's working conventions into a skill agents will follow. The output is one `-mode` skill tailored to them (e.g. `jay-mode`, `priya-mode`).
 
 This skill orchestrates three others: an inline mining pass (see step 1), Cursor's built-in `create-skill` (authoring), and the **unslop** skill (prose discipline). It sequences them. It doesn't replace them.

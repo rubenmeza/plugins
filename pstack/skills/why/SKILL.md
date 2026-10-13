@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Why
 
+Outside Cursor, read [`../poteto-mode/references/harness.md`](../poteto-mode/references/harness.md) first. It maps the Cursor tools, paths, and model slugs below to Claude Code and Codex.
+
 Investigate the motivation and intent behind code. The companion `how` skill answers what the code does and how it works. `why` answers what forces led to its shape.
 
 Each spawn below names a role line in the `pstack-models.mdc` rule and a default. Set `model` to that line's value, or to the default if the rule or the line is missing. Leave `model` unset when the value is `auto` or `inherit-parent`. If the Task tool rejects a slug, use the default and say so. If it rejects the default, use the closest valid slug of the same family from its error message.
@@ -32,7 +34,7 @@ Before spawning investigators, build the seed context inline: file paths and lin
 
 ### Discovery
 
-Before spawning investigators, list the available MCPs from the Cursor environment. Use the available-tools map when present. Otherwise inspect the `mcps/` directory Cursor exposes for enabled MCP servers.
+Before spawning investigators, list the available MCPs from the Cursor environment. Use the available-tools map when present. Otherwise inspect the `mcps/` directory Cursor exposes for enabled MCP servers. In Claude Code, the MCP tools are the ones named `mcp__<server>__<tool>`, and some load only on demand through tool search. In Codex, run `codex mcp list`. Count `gh` and `git` as available in every harness.
 
 Map each available MCP to one evidence category:
 

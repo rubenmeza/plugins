@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Show me your work
 
+Outside Cursor, read [`../poteto-mode/references/harness.md`](../poteto-mode/references/harness.md) first. It maps the Cursor tools, paths, and model slugs below to Claude Code and Codex.
+
 Keep one canonical log.
 
 ## The format

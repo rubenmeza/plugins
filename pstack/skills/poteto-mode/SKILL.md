@@ -1,5 +1,5 @@
 ---
-name: Poteto Mode
+name: poteto-mode
 description: poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.
 disable-model-invocation: true
 mode: true
@@ -11,6 +11,8 @@ reminder: New task? Playbook match or rigor needed -> apply /poteto-mode. Casual
 # Poteto mode
 
 Bundled skills live at `../<name>/SKILL.md` from this file, so put this file's absolute path in every `poteto-agent` prompt.
+
+Outside Cursor, read `references/harness.md` before the first spawn. It maps every Cursor tool, path, model slug, and built-in skill named below to Claude Code and Codex. Read `~/.agents/pstack-models.md` too when it exists. It is the `/setup-pstack` rule for those harnesses.
 
 ## Non-negotiables
 
